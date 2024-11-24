@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../css/Pesquisa.css">
+    <title>DIO.me</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Portal Colaborador DIO.me</h1> 
+        <div class="navbar-buttons">
+            <a href="../../../index.html">Portal DIO.me</a> 
+    </div>
+</div>
+
+    <div class="container">
+        <div class='container__titulo'><h2>Alteração Pesquisa</h2>
+        <div class='indice'><h3>Escala de Satisfação:</h3>
+        <ul> <li>1: 😠 Muito Insatisfeito</li>
+        <li>2: 🙁 Pouco Insatisfeito</li>
+        <li>3: 😐 Neutro</li>
+        <li>4: 🙂 Pouco Satisfeito</li>
+        <li>5: 😍 Muito Satisfeito</li> </ul></div>
+
+        <form method="post" action="alterarPesquisa.jsp" class="formulario">
+            <div class="form-group">
+                <label class="labelPergunta">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu Nome"  
+                       readonly title="O Nome não pode ser alterado.">
+            </div>
+
+            <div class="form-group">
+                <label class="labelPergunta">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF"  
+                       required maxlength="11" pattern="\d{11}" readonly title="O CPF não pode ser alterado.">
+            </div>
+
+            <label class="labelPergunta">1) Como você avaliaria a facilidade de navegação na plataforma?</label>
+            <input type="number" id="navegacao" name="navegacao" required maxlength="1" min="1" max="5" />
+
+            <label class="labelPergunta">2) Como você considera o conteúdo apresentado relevante para o seu aprendizado?</label>
+            <input type="number" id="conteudo" name="conteudo" required maxlength="1" min="1" max="5" />
+
+            <label class="labelPergunta">3) Você sente que os materiais são bem organizados e fáceis de entender?</label>
+            <input type="number" id="organizacao" name="organizacao" required maxlength="1"  min="1" max="5" />
+
+            <label class="labelPergunta">4) A plataforma oferece um bom suporte ao aluno em caso de dúvidas?</label>
+            <input type="number" id="suporte" name="suporte" required maxlength="1"  min="1" max="5" />
+
+            <label class="labelPergunta">5) Você acha que a plataforma ajudou a melhorar o seu desempenho acadêmico?</label>
+            <input type="number" id="desempenho" name="desempenho" required maxlength="1" min="1" max="5" />
+            
+            <a class="but" href="../../Upadate.html">Alterar Pesquisa</a>
+        </form>
+
+    </div>  
+</body>
+</html>
